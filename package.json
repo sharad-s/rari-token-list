@@ -1,0 +1,17 @@
+{
+  "name": "rari-token-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-tokens": "node compileTokens.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sushiswap/default-token-list": "^20.11.0",
+    "fs-extra": "^10.0.0"
+  }
+}
