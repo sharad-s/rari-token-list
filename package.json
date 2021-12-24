@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@sushiswap/default-token-list": "^20.11.0",
+    "download": "^8.0.0",
     "fs-extra": "^10.0.0"
   }
 }

@@ -1,14 +1,21 @@
 const { tokens } = require("@sushiswap/default-token-list");
+// const download = require("download");
 const fs = require("fs-extra");
 
-const SUPPORTED_CHAINIDS = [1, 42161];
+const SUPPORTED_CHAINIDS = [1, 3, 4, 5, 42, 42161, 421611, 10, 250];
 
 // Write to file
 async function writeTokenData(token) {
   const { chainId, address } = token;
-  await fs.outputFile(
-    `./tokens/${chainId}/${address}.json`,
-    JSON.stringify(token)
+
+  //   let arr = token.logoURI.split("/")
+  //   const fileType = arr[arr.length -1].split(".")[1]
+
+  await Promise.all(
+    await fs.outputFile(
+      `./tokens/${chainId}/${address}/info.json`,
+      JSON.stringify(token)
+    )
   );
 }
 
@@ -26,8 +33,8 @@ const promises = tokens.map(async (token) => {
   }
 });
 
-Promise.all(promises).then(() => {
-  console.log({ map }, Object.keys(map[42161]).length);
-});
+// Promise.all(promises).then(() => {
+//   console.log({ map }, Object.keys(map[42161]).length);
+// });
 
 module.exports = { map };
