@@ -1,3 +1,8 @@
- {
-  "logoURI": "https://cdn.discordapp.com/attachments/953712381886861372/957671684515696660/logo.png"
- }
+    {
+     "address":"0xEc4325F0518584F0774b483c215F65474EAbD27F",
+     "chainId":1,
+     "name":"OneBTC",
+     "symbol":"oneBTC",
+     "decimals":18,
+     "logoURI":"https://raw.githubusercontent.com/rari-capital/rari-token-list/tokens/1/0xEc4325F0518584F0774b483c215F65474EAbD27F/oneBTC.png"
+    }
